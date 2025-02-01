@@ -1,0 +1,21 @@
+body{
+    background-color: #161618;
+    margin:0px;
+}
+.security{
+    background-color: #454549;
+    height: 50px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textsecurity{
+    color: #F4F4F4;
+    display: inline;
+}
+nav a{
+    color: #F4F4F4;
+    text-decoration: none;
+}
