@@ -174,3 +174,14 @@ p{
     flex-direction: column;
 
 }
+
+.threegame1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p2{
+    display: flex;
+    flex-direction: column;
+}
