@@ -42,12 +42,16 @@ table {
 	border-spacing: 0;
 }
 
+:root{
+    --orange-light: #FF9800;
+    --orange-dark: #E35E26;
+    --gray-800: #454549;
+}
+
 body{
     background-color: #161618;
     margin:0px;
 }
-
-
 
 .security{
     background-color: #454549;
@@ -135,6 +139,7 @@ nav{
     flex-direction: row;
 }
 .enot-grid{
+    padding-top: 81px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -163,7 +168,7 @@ p{
     border:1px solid #F4F4F4;
     border-top: none;
     border-bottom-left-radius: 8px;
-    transform: translateY(-2.8px);
+    transform: translateY(-1px);
     border-bottom-right-radius: 8px;
     padding:7px;
     margin:0px;
@@ -176,12 +181,71 @@ p{
 }
 
 .threegame1{
+    padding-top: 184px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap:10px;
+    padding-left: 25px;
+}
+
+.threegame-container button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--orange-light);
+    border: none;
+    border-bottom-left-radius: 10px;
+    width: 211px;
+    height: 45px;
+}
+
+.threegame-container button p{
+    color: #161618;
+    font-size: 18px;
+}
+
+.threegame-container button img{
+    width: 21px;
+    height: 20px;
+}
+
+.threegame-container p{
+    font-size: 18px;
+}
+
+.threegame-container>div{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
 }
 
 .p2{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: var(--gray-800);
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    width: 211px;
+    height: 45px;
+}
+
+.zagltext{
+    position: relative;
+    top:130px;
+    font-size: 20px;
+}
+
+.line-proposition{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 23px;
+    padding-top: 40px;
+}
+
+.asasin img{
+    border-radius: 10px;
 }
