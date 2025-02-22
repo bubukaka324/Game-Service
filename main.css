@@ -137,9 +137,9 @@ nav{
 .enotmain{
     display: flex;
     flex-direction: row;
+    padding-top: 81px;
 }
 .enot-grid{
-    padding-top: 81px;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -211,13 +211,13 @@ p{
 }
 
 .threegame-container p{
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .threegame-container>div{
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .p2{
@@ -248,4 +248,16 @@ p{
 
 .asasin img{
     border-radius: 10px;
+}
+
+.cartpanel{
+    background-color: #454549;
+    width:430px;
+    height:680px;
+}
+
+.cartpanel p{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 33px;
 }
