@@ -251,6 +251,9 @@ p{
 }
 
 .cartpanel{
+    right:150px;
+    z-index: 100;
+    position: absolute;
     background-color: #454549;
     width:430px;
     height:680px;
@@ -260,4 +263,18 @@ p{
     font-size: 40px;
     padding-top: 20px;
     padding-left: 33px;
+}
+
+.game-container{
+    font-size: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:10px 15px;
+}
+
+.game-container p{
+    font-size: 20px;
+    padding:0px;
 }
