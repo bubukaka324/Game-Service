@@ -13,7 +13,12 @@ const games=[
     {name:"Storm Hunters", price:9},
     {name:"Call of the Ancestors", price:12},
     {name:"Edges of Reality", price:7},
-    {name:"Echoes of Oblivion", price:52}
+    {name:"Echoes of Oblivion", price:52},
+    {name:"Dark Labyrinth", price:2},
+    {name:"Twilight Star", price:1},
+    {name:"Path of Infinity", price:12},
+    {name:"Mar Legends 2", price:19},
+    {name:"Era of Winds", price:23},
 ]
 
 let cartButton = document.querySelector(".cartbutton")
@@ -33,7 +38,6 @@ buttons.forEach((button,index) => {
 
 });
 cartButton.addEventListener("click", ()=>{
-    console.log(cart)
     if(cartcontainer.hidden == true){
         cartcontainer.hidden = false
     }
@@ -45,7 +49,9 @@ function updateCart(){
     let title = document.createElement("p")
     title.innerText = "Your cart"
     cartcontainer.appendChild(title)
+    let sum = 0;
     cart.forEach((element) => {
+        sum += element.price;
         let gamecontainer = document.createElement("div");
         gamecontainer.className = "game-container"
         let gamename = document.createElement("p");
@@ -58,8 +64,10 @@ function updateCart(){
         removebutton.innerText = "REMOVE";
         removebutton.addEventListener("click", ()=>{
             gamecontainer.remove();
-            let index = cart.indexOf(element)
-            cart.splice(index, 1)
+            let index = cart.indexOf(element);
+            cart.splice(index, 1);
+            sum -= element.price;
+            sumBlock.innerText = "Total price:" + sum;
         })
         gamecontainer.appendChild(gamename)
         gamecontainer.appendChild(gameprice)
@@ -67,13 +75,17 @@ function updateCart(){
         gamecontainer.appendChild(removebutton)
         cartcontainer.appendChild(gamecontainer)
     })
+    let sumBlock = document.createElement("p");
+    sumBlock.innerText = "Total price:" + sum; 
+    cartcontainer.appendChild(sumBlock);
+    sumBlock.className = "sumBlock"
 }
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
-  
+    slidesPerView:3,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
