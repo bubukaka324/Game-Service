@@ -60,6 +60,13 @@ body{
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.textsecurity{
+    position: relative;
+    bottom: 5px;
 }
 
 .maininheader{
@@ -69,6 +76,8 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom:1px solid #454549;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .buttonsinheader, .buttonreg{
@@ -77,6 +86,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 
 .cartbutton{
     background-color: transparent;
