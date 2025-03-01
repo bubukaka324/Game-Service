@@ -14,6 +14,7 @@ const games=[
     {name:"Call of the Ancestors", price:12},
     {name:"Edges of Reality", price:7},
     {name:"Echoes of Oblivion", price:52},
+    {name:"Eternal Horizon", price:99},
     {name:"Dark Labyrinth", price:2},
     {name:"Twilight Star", price:1},
     {name:"Path of Infinity", price:12},
